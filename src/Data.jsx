@@ -110,10 +110,10 @@ export const projects = [
     id: 4,
     icon: <TbSpeakerphone />,
     title: "Portofolio Website",
-    description1: "-A front-end and back-end seperated project that generated API documentation by Swagger",
-    description2: "-Used: vue.js and Springboot, Spring Security, MVC model, RESTful API, MyBatis Plus, Element UI library, Swagger",
-    description3: "-Using Spring Security to assign authorities to different users and caching the authorities in Redis for efficient retrievaland management. Trying to work with AOP to add logs once user logged in or made changes.",
-    sourceCode: "https://github.com/troyquan/permissionProject",
+    description1: "-Using React.js, Tailwind CSS",
+    description2: "-Divid every section into components",
+    description3: "",
+    sourceCode: "https://github.com/troyquan/portofolio-Website",
     liveDemo: ""
   },
 ];
@@ -208,7 +208,7 @@ export const skills = [
   {
     id: 11,
     image: antD,
-    value: "Language",
+    value: "Front-End",
   },
   {
     id: 12,
@@ -227,7 +227,7 @@ export const skills = [
   },
   {
     id: 15,
-    image: mysql,
+    image: JPA,
     value: "Web & Databases",
   },
   {
@@ -237,7 +237,7 @@ export const skills = [
   },
   {
     id: 17,
-    image: JPA,
+    image: mysql,
     value: "Web & Databases",
   },
   {

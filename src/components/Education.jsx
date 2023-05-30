@@ -18,7 +18,7 @@ const Educations = () => {
           return (
             <div
               key={education.id}
-              className="flex gap-4 p-4 hover:bg-slate-300 rounded-lg"
+              className="flex gap-4 p-4 hover:bg-slate-300 rounded-lg bg-ghostWhite mb-4"
             >
       
               <img src={education.image} alt="educationIMG" style={imgStyle}/>

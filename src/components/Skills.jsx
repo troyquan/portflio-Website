@@ -32,7 +32,7 @@ const Skills = () => {
       <div className="mt-4 flex flex-wrap gap-8  p-2">
         {btns.map((btn) => {
           return (
-            <button key={btn.id} value={btn.value} onClick={handleClick}>
+            <button key={btn.id} value={btn.value} onClick={handleClick} className="hover:scale-110 ">
               {btn.name}
             </button>
           );

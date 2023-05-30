@@ -8,7 +8,7 @@ const Contact = () => {
         <h2 className="text-[1.5rem] font-bold">Contact</h2>
         <div className="w-14 h-[3px] rounded-sm bg-blue"></div>
       </div>
-      <div className="shadow-lg p-4 max-w-[700px] mx-auto">
+      <div className="shadow-lg p-4 max-w-[700px] mx-auto bg-ghostWhite opacity-90">
         <div className="grid gap-8 sm:grid-cols-3">
           {contacts.map((contact) => {
             const { id, icon, text } = contact;
@@ -20,7 +20,7 @@ const Contact = () => {
             );
           })}
         </div>
-        <div className="mt-8 flex  gap-12 flex-wrap justify-center">
+        <div className="mt-8 flex  gap-12 flex-wrap justify-center ">
           <div>
             <div className="mb-5">
               <input

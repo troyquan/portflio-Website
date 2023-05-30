@@ -6,11 +6,13 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import ScrollToTop from "./components/ScrollToTop";
 import Educations from "./components/Education";
+import BackgroundPic from './assets/BG.jpg'
+
 
 
 function App() {
   return (
-    <div className="font-Poppins bg-ghostWhite">
+    <div className="font-Poppins  " style={{ backgroundImage: `url(${BackgroundPic})` }}>
       <Navbar />
       <Home />
       <Skills />

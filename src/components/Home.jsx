@@ -19,7 +19,7 @@ const Home = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-grey sm:text-[1.25rem] mb-4">Full Stack Developer</div>
+          <div className="text-black opacity-80 sm:text-[1.25rem] mb-4">Full Stack Developer</div>
           <h2 className="text-[2rem] sm:text-[3rem] font-bold mb-4">
             Yongze Quan
           </h2>
@@ -30,19 +30,19 @@ const Home = () => {
             <a
               href={pdf}
               download="Yongze_Quan_CV.pdf"
-              className="py-2 px-4 border-[2px] border-solid border-blue text-[0.9rem] rounded-[2.2rem] shadow-md"
+              className="py-2 px-4 border-[2px] border-solid border-blue text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110"
             >
               Download Cv
             </a>
             <a
               href="#contact"
-              className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md"
+              className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110"
             >
               Contact
             </a>
             <a
               href="http://linkedin.com/in/yongze-quan-1b1473278"
-              className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md"
+              className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110"
             >
               Linkedin
             </a>
