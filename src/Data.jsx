@@ -39,6 +39,7 @@ import vscode from "./assets/vscode.jpg";
 import XAMPP from "./assets/XAMPP.jpg"; 
 import vmware from "./assets/vmware.webp"; 
 import nodejs from "./assets/nodejs.png"; 
+import maven from "./assets/maven.jpg"; 
 
 import education1 from "./assets/education1.png";
 import education2 from "./assets/education2.png";
@@ -92,8 +93,9 @@ export const projects = [
     id: 2,
     icon: <BsShop />,
     title: "Order System",
-    description1: "-Created CRUD operations, model and the views using PHP",
-    description2: "-Uses sign-up/login/logout feature, password encryption, input validation",
+    description1: "-My Order System project is built using PHP and Bootstrap, providing login and registration functionality with REGEX validation for input information.",
+    description2: "-The project includes separate login portals for both admins and customers, allowing for secure access to their respective accounts and privileges.",
+    description3:"Utilizing APIs, the registration process suggests recommended usernames to users, and form validation ensures that input data meets the required criteria for a seamless user experience.",
     sourceCode: "https://gitlab.com/quantroy/MissionEats",
     liveDemo: ""
   },
@@ -101,8 +103,9 @@ export const projects = [
     id: 3,
     icon: <TiDeviceDesktop />,
     title: "Employee Management(Thymeleaf)",
-    description1: "-Created CRUD operations on Employee model and the views using springboot and thymeleaf",
-    description2: "-Adding vague search function to search all elements of the employees",
+    description1: "-My Employee Management project is a Spring Boot application built with Maven, utilizing Thymeleaf templates for the frontend and Bootstrap for styling.",
+    description2: "-The project allows for efficient management of employee data, leveraging AJAX to transmit JSON data and implementing a fuzzy search feature to easily query information.",
+    description3: "By combining Spring Boot's powerful backend capabilities with Thymeleaf's server-side rendering and Bootstrap's responsive design, the Employee Management project provides a user-friendly interface for seamless employee data management.",
     sourceCode: "https://github.com/troyquan/employeeManagement",
     liveDemo: ""
   },
@@ -110,9 +113,9 @@ export const projects = [
     id: 4,
     icon: <TbSpeakerphone />,
     title: "Portofolio Website",
-    description1: "-Using React.js, Tailwind CSS",
-    description2: "-Divid every section into components",
-    description3: "",
+    description1: "-Used React.js, Tailwind CSS, react-icons",
+    description2: "-The project displays my portfolio across different domains, leveraging React.js for dynamic interactions and component-based development, and utilizing Tailwind CSS for modern and stylish design",
+    description3: "By integrating React Icons, I can easily incorporate a variety of vector icons into my project, making my portfolio page more visually appealing and user-friendly.",
     sourceCode: "https://github.com/troyquan/portofolio-Website",
     liveDemo: ""
   },
@@ -122,26 +125,26 @@ export const serviceFinishes = [
   {
     id: 1,
     icon: <BsHeart />,
-    text: "Happy Clients",
-    amount: 566,
+    text: "Average Grade",
+    amount: 94.8,
   },
   {
     id: 2,
     icon: <BsWatch />,
-    text: "Working Hours",
-    amount: 5335,
+    text: "Learning Hours",
+    amount: 2000,
   },
   {
     id: 3,
     icon: <BsStar />,
-    text: "Awards Won",
-    amount: 13,
+    text: "On Dean's List",
+    amount: 2,
   },
   {
     id: 4,
     icon: <BiCoffeeTogo />,
-    text: "Coffee Consumed",
-    amount: 1189,
+    text: "Global R score",
+    amount: 29.861,
   },
 ];
 export const btns = [
@@ -330,6 +333,11 @@ export const skills = [
     image: nodejs,
     value: "Front-End",
   },
+  { 
+    id: 36,
+    image: maven,
+    value: "Tools",
+  },
   
 ];
 
@@ -347,7 +355,7 @@ export const educations = [
     image: education2,
     title: "DEP In Computer Support, Lester B. Pearson School Board",
     time: "June, 2016 - November, 2017",
-    description1: "- A  1800  hour  program  with  fundamental  computer  technologies  including  html,css,  server  creating  and  maintaining ., network set-up, and visual basic ."
+    description1: "- A  1800  hour  program  with  fundamental  computer  technologies  including  html,css,  server  creating  and  maintaining, network set-up, and visual basic ."
   },
 ];
 

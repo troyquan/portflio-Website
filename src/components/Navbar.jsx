@@ -6,6 +6,8 @@ import NavLinks from "./NavLinks";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [isTop, setIsTop] = useState(false);
+  
+
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -13,6 +15,8 @@ const Navbar = () => {
     });
 
     window.addEventListener("resize", closeMenu);
+
+    
   }, []);
 
   const closeMenu = () => {
@@ -42,7 +46,7 @@ const Navbar = () => {
             {navLinks.map((navLink) => {
               return (
                 <div key={navLink.id}>
-                  <a href={`#${navLink.href}`} className="text-lg hover:text-blue">
+                  <a href={`#${navLink.href}`} className="text-lg hover:text-blue hover:underline">
                     {navLink.text}
                   </a>
                 </div>
@@ -52,7 +56,7 @@ const Navbar = () => {
         )}
         {!toggle && (
           <HiMenuAlt3
-            className="cursor-pointer text-3xl md:hidden"
+            className="cursor-pointer text-3xl md:hidden hover:text-blue"
             onClick={() => setToggle(!toggle)}
           />
         )}

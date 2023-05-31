@@ -20,19 +20,19 @@ const Contact = () => {
             );
           })}
         </div>
-        <div className="mt-8 flex  gap-12 flex-wrap justify-center ">
+        <div className="mt-8 flex  gap-12 flex-wrap justify-center text-lg ">
           <div>
             <div className="mb-5">
               <input
                 type="text"
-                className="outline-none bg-transparent border border-solid border-blue p-2 text-[0.9rem]"
+                className="outline-none bg-transparent border border-solid border-blue p-2 hover:border-red-500"
                 placeholder="Name"
               />
             </div>
             <div className="mb-5">
               <input
                 type="text"
-                className="outline-none bg-transparent border border-solid border-blue p-2 text-[0.9rem]"
+                className="outline-none bg-transparent border border-solid border-blue p-2 hover:border-red-500"
                 placeholder="Email"
               />
             </div>
@@ -40,10 +40,10 @@ const Contact = () => {
           <div>
             <textarea
               placeholder="Message"
-              className="outline-none bg-transparent border border-solid border-blue resize-none text-[0.9rem] p-2 h-40 w-80"
+              className="outline-none bg-transparent border border-solid border-blue resize-none  p-2 h-40 w-80 hover:border-red-500" 
             ></textarea>
             <div className="mt-2 text-end">
-              <a href="" className="text-[0.9rem] text-blue">
+              <a href="" className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:bg-blue">
                 Send message
               </a>
             </div>

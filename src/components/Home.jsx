@@ -30,19 +30,19 @@ const Home = () => {
             <a
               href={pdf}
               download="Yongze_Quan_CV.pdf"
-              className="py-2 px-4 border-[2px] border-solid border-blue text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110"
+              className=" py-2 px-4 border-[2px] border-solid border-blue text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110"
             >
-              Download Cv
+              Download CV
             </a>
             <a
               href="#contact"
-              className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110"
+              className="animate-bounce py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110 hover:border-blue"
             >
               Contact
             </a>
             <a
               href="http://linkedin.com/in/yongze-quan-1b1473278"
-              className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110"
+              className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110 hover:border-blue"
             >
               Linkedin
             </a>
