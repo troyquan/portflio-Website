@@ -376,5 +376,7 @@ export const contacts = [
     id: 3,
     icon: <GoMailRead />,
     text: "yongze.quan@outlook.com",
+    href: "mailto:yongze.quan@outlook.com",
+    target: "_blank"
   },
 ];

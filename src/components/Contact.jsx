@@ -15,12 +15,12 @@ const Contact = () => {
             return (
               <div className="flex gap-2 items-center flex-col" key={id}>
                 <div className="text-blue text-xl">{icon}</div>
-                <div className="text-[0.9rem] opacity-80">{text}</div>
+                <a href={contact.href} target={contact.target} className="text-[0.9rem] opacity-80">{text}</a>
               </div>
             );
           })}
         </div>
-        <div className="mt-8 flex  gap-12 flex-wrap justify-center text-lg ">
+        {/* <div className="mt-8 flex  gap-12 flex-wrap justify-center text-lg ">
           <div>
             <div className="mb-5">
               <input
@@ -48,7 +48,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

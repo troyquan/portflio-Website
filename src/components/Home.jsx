@@ -35,7 +35,8 @@ const Home = () => {
               Download CV
             </a>
             <a
-              href="#contact"
+              href="mailto:yongze.quan@outlook.com"
+              target="_blank"
               className="animate-bounce py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110 hover:border-blue"
             >
               Contact
