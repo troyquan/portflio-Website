@@ -95,7 +95,7 @@ export const projects = [
     title: "Order System",
     description1: "-My Order System project is built using PHP and Bootstrap, providing login and registration functionality with REGEX validation for input information.",
     description2: "-The project includes separate login portals for both admins and customers, allowing for secure access to their respective accounts and privileges.",
-    description3:"Utilizing APIs, the registration process suggests recommended usernames to users, and form validation ensures that input data meets the required criteria for a seamless user experience.",
+    description3:"-Utilizing APIs, the registration process suggests recommended usernames to users, and form validation ensures that input data meets the required criteria for a seamless user experience.",
     sourceCode: "https://gitlab.com/quantroy/MissionEats",
     liveDemo: ""
   },
@@ -105,7 +105,7 @@ export const projects = [
     title: "Employee Management(Thymeleaf)",
     description1: "-My Employee Management project is a Spring Boot application built with Maven, utilizing Thymeleaf templates for the frontend and Bootstrap for styling.",
     description2: "-The project allows for efficient management of employee data, leveraging AJAX to transmit JSON data and implementing a fuzzy search feature to easily query information.",
-    description3: "By combining Spring Boot's powerful backend capabilities with Thymeleaf's server-side rendering and Bootstrap's responsive design, the Employee Management project provides a user-friendly interface for seamless employee data management.",
+    description3: "-By combining Spring Boot's powerful backend capabilities with Thymeleaf's server-side rendering and Bootstrap's responsive design, the Employee Management project provides a user-friendly interface for seamless employee data management.",
     sourceCode: "https://github.com/troyquan/employeeManagement",
     liveDemo: ""
   },
@@ -115,7 +115,7 @@ export const projects = [
     title: "Portofolio Website",
     description1: "-Used React.js, Tailwind CSS, react-icons",
     description2: "-The project displays my portfolio across different domains, leveraging React.js for dynamic interactions and component-based development, and utilizing Tailwind CSS for modern and stylish design",
-    description3: "By integrating React Icons, I can easily incorporate a variety of vector icons into my project, making my portfolio page more visually appealing and user-friendly.",
+    description3: "-By integrating React Icons, I can easily incorporate a variety of vector icons into my project, making my portfolio page more visually appealing and user-friendly.",
     sourceCode: "https://github.com/troyquan/portofolio-Website",
     liveDemo: ""
   },
