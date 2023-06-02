@@ -27,7 +27,7 @@ const Projects = () => {
                   Source Code
                 </a>
                 <span>&nbsp; &nbsp; &nbsp; &nbsp;</span>
-                <a href="#" className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:bg-blue">
+                <a href={project.liveDemo} className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md hover:bg-blue">
                   Live Demo
                 </a>
               </div>
