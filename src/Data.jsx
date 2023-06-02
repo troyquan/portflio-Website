@@ -310,7 +310,7 @@ export const skills = [
   },
   {
     id: 31,
-    image: jUnit5,
+    image: JUnit5,
     value: "Testing and Documentation",
   },
   {
