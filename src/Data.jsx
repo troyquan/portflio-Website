@@ -24,7 +24,7 @@ import htmlCSS from "./assets/HTML-CSS.png";
 import IntelliJ from "./assets/IntelliJ.png"; 
 import JPA from "./assets/JPA.jpg"; 
 import jQuery from "./assets/jQuery.png"; 
-import jUnit5 from "./assets/jUnit5.jpg"; 
+import jUnit5 from "./assets/JUnit5.jpg"; 
 import mockito from "./assets/Mockito.png"; 
 import myBatisPlus from "./assets/myBatisPlus.jpg"; 
 import mysql from "./assets/mysql.png"; 
@@ -310,7 +310,7 @@ export const skills = [
   },
   {
     id: 31,
-    image: JUnit5,
+    image: jUnit5,
     value: "Testing and Documentation",
   },
   {
