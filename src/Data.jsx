@@ -87,7 +87,7 @@ export const projects = [
     description2: "-Used: vue.js and Springboot, Spring Security, MVC model, RESTful API, MyBatis Plus, Element UI library, Swagger",
     description3: "-Using Spring Security to assign authorities to different users and caching the authorities in Redis for efficient retrievaland management. Trying to work with AOP to add logs once user logged in or made changes.",
     sourceCode: "https://github.com/troyquan/permissionProject",
-    liveDemo: "http://3.134.60.155"
+    liveDemo: "http://18.118.207.57/"
   },
   {
     id: 2,
