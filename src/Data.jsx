@@ -95,7 +95,7 @@ export const projects = [
     title: "Order System",
     description1: "-Our Order System project is built using PHP and Bootstrap, providing login and registration functionality with REGEX validation for input information.",
     description2: "-The project includes separate login portals for both admins and customers, allowing for secure access to their respective accounts and privileges.",
-    description3:"Utilizing APIs, the registration process suggests recommended usernames to users, and form validation ensures that input data meets the required criteria for a seamless user experience.",
+    description3:"-Utilizing APIs, the registration process suggests recommended usernames to users, and form validation ensures that input data meets the required criteria for a seamless user experience.",
     sourceCode: "https://gitlab.com/quantroy/MissionEats",
     liveDemo: ""
   },
