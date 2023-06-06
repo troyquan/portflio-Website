@@ -14,7 +14,7 @@ const NavLinks = ({ href, text, setToggle }) => {
       transition={{ duration: 0.8 }}
     >
       <div onClick={handleClick}>
-        <a href={`#${href}`} className="text-[0.95rem] hover:text-blue">
+        <a href={`#${href}`} className="text-[0.95rem] hover:text-blue hover:underline">
           {text}
         </a>
       </div>
