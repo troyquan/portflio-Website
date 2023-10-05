@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../assets/hero1.jpg";
 import { motion } from "framer-motion";
-import pdf from '../assets/Yongze_Quan_CV.pdf'
+import pdf from '../assets/Troy_Quan_CV .pdf'
 
 const Home = () => {
   return (
@@ -29,7 +29,7 @@ const Home = () => {
           <div className="flex mt-4 gap-4">
             <a
               href={pdf}
-              download="Yongze_Quan_CV.pdf"
+              download="Troy_Quan_CV .pdf"
               className=" py-2 px-4 border-[2px] border-solid border-blue text-[0.9rem] rounded-[2.2rem] shadow-md hover:scale-110"
             >
               Download CV
