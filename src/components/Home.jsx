@@ -21,7 +21,7 @@ const Home = () => {
         >
           <div className="text-black opacity-80 sm:text-[1.25rem] mb-4">Full Stack Developer</div>
           <h2 className="text-[2rem] sm:text-[3rem] font-bold mb-4">
-            Yongze Quan
+            Troy Quan
           </h2>
           <p className="opacity-80 text-[0.9rem]">
           Full Stack student seeking internship or job oppotunity starting September, 2023 . I excel in group work and have a strong passion for programming, looking forward to make meaningful contributions to larger-scale projects .

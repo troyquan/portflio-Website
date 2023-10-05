@@ -81,6 +81,16 @@ export const navLinks = [
 export const projects = [
   {
     id: 1,
+    icon: <TbSpeakerphone />,
+    title: "Foodie sky",
+    description1: "-Integrated with react and java springboot.",
+    description2: "-Using Antd and Tailwind as frontend library for effecient developing. Generate visulized data info by Echart.",
+    description3: "-Containerize the services by Docker and using docker-compose to deploy on AWS EC2. Payment supported by stripe component from react and stripe JDK from java springboot.",
+    sourceCode: "https://github.com/troyquan/foodie-sky",
+    liveDemo: "http://3.142.186.162:80"
+  },
+  {
+    id: 2,
     icon: <ImPencil />,
     title: "Employment Management(Upgraded)",
     description1: "-A front-end and back-end seperated project that generated API documentation by Swagger",
@@ -90,7 +100,7 @@ export const projects = [
     liveDemo: "http://13.59.204.220/"
   },
   {
-    id: 2,
+    id: 3,
     icon: <BsShop />,
     title: "Order System",
     description1: "-Our Order System project is built using PHP and Bootstrap, providing login and registration functionality with REGEX validation for input information.",
@@ -100,7 +110,7 @@ export const projects = [
     liveDemo: ""
   },
   {
-    id: 3,
+    id: 4,
     icon: <TiDeviceDesktop />,
     title: "Employee Management(Thymeleaf)",
     description1: "-Our Employee Management project is a Spring Boot application built with Maven, utilizing Thymeleaf templates for the frontend and Bootstrap for styling.",
@@ -110,7 +120,7 @@ export const projects = [
     liveDemo: ""
   },
   {
-    id: 4,
+    id: 5,
     icon: <TbSpeakerphone />,
     title: "Portofolio Website",
     description1: "-Used React.js, Tailwind CSS, react-icons",
