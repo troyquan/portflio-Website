@@ -87,7 +87,8 @@ export const projects = [
     description2: "-Using Antd and Tailwind as frontend library for effecient developing. Generate visulized data info by Echart.",
     description3: "-Containerize the services by Docker and using docker-compose to deploy on AWS EC2. Payment supported by stripe component from react and stripe JDK from java springboot.",
     sourceCode: "https://github.com/troyquan/foodie-sky",
-    liveDemo: "http://3.142.186.162:80"
+    liveDemo: "http://3.142.186.162:80",
+    liveDemo1: "http://3.142.186.162:81"
   },
   {
     id: 2,
