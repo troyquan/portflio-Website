@@ -93,12 +93,11 @@ export const projects = [
   {
     id: 2,
     icon: <ImPencil />,
-    title: "Employment Management(Upgraded)",
-    description1: "-A front-end and back-end seperated project that generated API documentation by Swagger",
-    description2: "-Used: vue.js and Springboot, Spring Security, MVC model, RESTful API, MyBatis Plus, Element UI library, Swagger",
-    description3: "-Using Spring Security to assign authorities to different users and caching the authorities in Redis for efficient retrievaland management. Trying to work with AOP to add logs once user logged in or made changes.",
-    sourceCode: "https://github.com/troyquan/permissionProject",
-    liveDemo: "http://13.59.204.220/"
+    title: "Code Cybear",
+    description1: "-A full-stack web application developed using Node.js Express for the backend and React with Tailwind.css and Antd components for the frontend. The system integrates Azure Storage to scan uploaded files for potential risks, ensuring file security. Additionally, it incorporates a cloud-deployed AI model to generate intelligent responses based on the file scan results, enhancing the system’s ability to detect threats.",
+    description2: "-I was responsible for building the entire upload and download functionalities, as well as developing interactive elements of the frontend from scratch. This included managing file interactions, processing scan results, and providing user feedback during the scanning process. ",
+    description3: "-. Furthermore, I workedclosely with the UI/UX team to ensure a responsive and user-friendly interface. I also set up Microsoft DevOps CI/CD pipelines to streamline the development and deployment processes.",
+    liveDemo: "http://www.codecybear.com"
   },
   {
     id: 3,
@@ -386,8 +385,8 @@ export const contacts = [
   {
     id: 3,
     icon: <GoMailRead />,
-    text: "yongze.quan@outlook.com",
-    href: "mailto:yongze.quan@outlook.com",
+    text: "quantroy@gmail.com",
+    href: "mailto:quantroy@gmail.com",
     target: "_blank"
   },
 ];
