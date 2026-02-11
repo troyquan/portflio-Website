@@ -47,17 +47,22 @@ export const componentMap = {
       <span className="text-sm">{label}</span>
     </label>
   ),
-  Link: ({ label, href = "#" }) => (
+  Link: ({ label, value, href = "#" }) => (
     <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue hover:underline text-sm">
-      {label}
+      {label ?? value}
     </a>
   ),
-  Text: ({ text }) => <p className="text-sm opacity-80">{text}</p>,
+  Text: ({ text, value, variant }) => {
+    const content = text ?? value;
+    if (!content) return null;
+    if (variant === "title") return <h3 className="text-lg font-bold text-blue mb-2">{content}</h3>;
+    return <p className="text-sm opacity-80">{content}</p>;
+  },
   Stack: ({ direction = "column", gap = "normal", children }) => (
     <div
       className="flex"
       style={{
-        flexDirection: direction === "row" ? "row" : "column",
+        flexDirection: direction === "row" || direction === "horizontal" ? "row" : "column",
         gap: gap === "small" ? "0.5rem" : gap === "large" ? "1.5rem" : "1rem"
       }}
     >

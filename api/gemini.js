@@ -44,10 +44,17 @@ Use only these component types: Card, Input, Button, Textarea, Select, Checkbox,
 - Stack: flex container. props: direction (row|column), gap
 Return valid JSON matching the schema. Use English for all labels and text.`;
 
-const CONTACT_CARD_PROMPT = `Generate a professional contact card / business card as a JSON structure.
-Use the portfolio context provided to fill in real name, title, bio, phone, email, location, and LinkedIn.
-Structure: a Card as root containing: name as title, brief bio as description, then a Stack of Link components for Contact, Email, LinkedIn, and optionally a Text for location.
-Use proper href values: mailto: for email, full URL for LinkedIn.`;
+const CONTACT_CARD_PROMPT = `Generate a professional contact card as a JSON structure.
+Use the portfolio context provided. Structure:
+- Root Card with children: ["name", "bio", "contactStack"]
+- name: Text with props { value: "Person Name", variant: "title" }
+- bio: Text with props { value: "brief bio text" }
+- contactStack: Stack with props { direction: "column" } and children: ["contact", "email", "linkedin", "location"]
+- contact: Link with props { href: "tel:PHONE", value: "phone number" }
+- email: Link with props { href: "mailto:EMAIL", value: "email" }
+- linkedin: Link with props { href: "full LinkedIn URL", value: "LinkedIn" }
+- location: Text with props { value: "city, region" }
+Every element MUST be in a parent's children array. Use value (not label/text) for Link and Text.`;
 
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -77,7 +84,7 @@ export default async function handler(req, res) {
         ? `${CONTACT_CARD_PROMPT}\n\nPortfolio context:\n${context || "No context provided."}\n\nGenerate the contact card JSON.`
         : `${COMPONENT_PROMPT}\n\nUser request: ${prompt}`;
       const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-1.5-flash",
         contents: fullPrompt,
         config: {
           responseMimeType: "application/json",
@@ -104,7 +111,7 @@ export default async function handler(req, res) {
       }
       const systemContext = context || "You are a helpful assistant for a portfolio website. Answer questions about the developer's skills, projects, and background.";
       const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-1.5-flash",
         contents: prompt,
         config: { systemInstruction: systemContext }
       });
@@ -116,8 +123,12 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Invalid mode. Use 'component' or 'chat'" });
   } catch (err) {
     console.error("Gemini API error:", err);
-    return res.status(500).json({
-      error: err?.message || "Gemini API request failed"
+    const msg = err?.message || "Gemini API request failed";
+    const isQuota = msg.includes("429") || msg.includes("quota") || msg.includes("RESOURCE_EXHAUSTED");
+    return res.status(isQuota ? 429 : 500).json({
+      error: isQuota
+        ? "API quota exceeded. Please wait a minute and try again, or check your Gemini API plan at ai.google.dev"
+        : msg
     });
   }
 }
