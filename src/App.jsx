@@ -6,9 +6,8 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import ScrollToTop from "./components/ScrollToTop";
 import Educations from "./components/Education";
+import AIChat from "./components/AIChat/AIChat";
 import BackgroundPic from './assets/BG.jpg'
-
-
 
 function App() {
   return (
@@ -21,6 +20,7 @@ function App() {
       <Contact />
       <Footer />
       <ScrollToTop />
+      <AIChat />
     </div>
   );
 }
